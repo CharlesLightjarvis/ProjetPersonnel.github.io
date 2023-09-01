@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(red, rgb(76, 158, 76), blue);
+}
+
+.main {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 2px rgba(0, 5, 5, 0.5);
+}
+
+.main h3 {
+    font-size: 20px;
+    color: rgba(45, 42, 42, 0.5);
+}
+
+.input {
+    padding: 30px 0px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.input input,
+.input button {
+    height: 50px;
+    width: 120px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.input input {
+    text-align: center;
+    color: rgb(63, 56, 56);
+    font-size: 25px;
+    border: 1px solid #aaa;
+}
+
+/* pour ne plus permettre a l'utilisateur de modifier l'input
+ */
+.input input:disabled {
+    cursor: not-allowed;
+}
+
+/* pour enlever les barres sur les cotes pour augmenter ou baisser les nombres */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
+
+
+.input button {
+    color: antiquewhite;
+    background-color: #4a98f7;
+    font-size: 18px;
+    border: #aaa;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.input button:active {
+    transform: scale(0.9);
+}
